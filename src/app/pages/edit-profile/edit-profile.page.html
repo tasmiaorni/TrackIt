@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="profile">
+  <ion-card no-margin>
+    <ion-card-content class="bg-profile">
+      <img src="assets/img/avatar.png">
+      <h1 class="fw500">Jane Doe</h1>
+      <h2 color="light" margin-bottom>Customer</h2>
+      <ion-button icon-left color="secondary">
+        <ion-icon name="photos"></ion-icon> 
+        Edit / Add Avatar
+      </ion-button>
+    </ion-card-content>
+  
+    <ion-grid fixed no-padding>
+      <ion-row>
+        <ion-col size="12" padding>
+
+          <ion-list margin-bottom>
+            <ion-list-header color="light">
+              <ion-label class="fw700">Profile Information</ion-label>
+            </ion-list-header>
+
+            <ion-item>
+              <ion-label color="dark" position="stacked">Full Name:</ion-label>
+              <ion-input inputmode="text" placeholder="Ex..: Joe Doe" value="Jane Doe"></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label color="dark" position="stacked">Email:</ion-label>
+              <ion-input inputmode="email" placeholder="Ex.: joe@doe.com" value="janedoe@gmail.com"></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label color="dark" position="stacked">Address:</ion-label>
+              <ion-input inputmode="text" placeholder="Ex.: Test Road 123"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark" position="stacked">City:</ion-label>
+              <ion-input inputmode="text" placeholder="Ex.: New York"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark" position="stacked">State:</ion-label>
+              <ion-input inputmode="text" placeholder="Ex.: NY"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark" position="stacked">Country:</ion-label>
+              <ion-input inputmode="text" placeholder="Ex.: United States"></ion-input>
+            </ion-item>
+  
+          </ion-list>
+
+          <ion-list>
+            <ion-radio-group>
+              <ion-list-header color="light">
+                <ion-label class="fw700">User Type</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label color="primary">Customer</ion-label>
+                <ion-radio slot="start" value="customer" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label color="primary">Owner</ion-label>
+                <ion-radio slot="start" value="agent"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
+
+          <ion-list>
+            <ion-list-header color="light">
+              <ion-label class="fw700">News & Updates</ion-label>
+            </ion-list-header>
+
+            <ion-item>
+              <ion-label class="text-1x">For the future, I'd like to receive news and updates from TrackIT Inc. via email.</ion-label>
+              <ion-checkbox></ion-checkbox>
+            </ion-item>
+          </ion-list>
+  
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+    <ion-button size="large" expand="full" color="dark" (click)="sendData()" no-margin>Save</ion-button>
+  </ion-card>
+  
+  <div padding>
+
+  </div>
+</ion-content>

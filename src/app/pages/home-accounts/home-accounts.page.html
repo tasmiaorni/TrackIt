@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="secondary"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+        <ion-text color="light">
+          <ion-text color="light" class="fw700">Home</ion-text>
+        </ion-text>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="small" shape="round" color="medium" (click)="notifications()">
+        <ion-icon name="notifications"></ion-icon>
+        <ion-badge color="dark" slot="end">2</ion-badge>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar color="dark">
+    <ion-searchbar [(ngModel)]="searchKey"></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button size="small" shape="round" color="medium" (click)="searchFilter()">
+        <ion-icon name="options"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card no-margin class="no-radius">
+    <ion-item lines="none" color="medium">
+      <ion-label>
+        <h2 no-margin class="fw500 no-margin">
+          <ion-text color="dark">Your Bank Accounts</ion-text>
+        </h2>
+
+        <p class="text-11x no-margin">
+          <ion-text  color="primary">{{yourLocation}}</ion-text>
+        </p>
+      </ion-label>
+      <ion-button shape="round" fill="outline" size="small" color="primary" (click)="alertLocation()">
+        Location
+        <ion-icon name="locate"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-card>
+
+  <ion-card text-center padding color="primary">
+    <ion-label position="floating">
+      Chase Bank    *** 1234 <br>
+      <h3>55.21 $</h3>
+    </ion-label>
+
+  </ion-card>
+
+  <div class="center">
+    <ion-button  color="dark" fill="solid" (click)="presentImage(themeCover)" no-margin>
+      Go to
+     </ion-button>
+  </div>
+
+  <ion-card text-center padding color="primary">
+    <ion-label position="floating">
+      Wells Fargo    *** 1234 <br>
+      <h3>55.21 $</h3>
+    </ion-label>
+  </ion-card>
+
+  <div class="center">
+    <ion-button  color="dark" fill="solid" (click)="presentImage(themeCover)" no-margin>
+      Go to
+     </ion-button>
+  </div>
+
+  <ion-card text-center padding color="primary">
+    <ion-label position="floating">
+      Chase Freedom Credit Card   *** 1234 <br>
+      <h3>55.21 $</h3>
+    </ion-label>
+  </ion-card>
+
+  
+   <!-- <ion-img [src]="themeCover"></ion-img> -->
+   <div class="center">
+    <ion-button  color="dark" fill="solid" (click)="presentImage(themeCover)" no-margin>
+      Go to
+     </ion-button>
+  </div>
+  
+
+
+  <ion-button icon-left margin shape="round" expand="full" color="secondary" (click)="goToTransactions()" tappable>
+    <ion-icon name="swap"></ion-icon>
+    See recent transactions
+  </ion-button>
+
+
+</ion-content>
+<!--<popmenu></popmenu>-->
+  
