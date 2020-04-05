@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'health', loadChildren: './pages/health/health.module#HealthPageModule' },
   { path: 'fun', loadChildren: './pages/fun/fun.module#FunPageModule' },
   { path: 'dog', loadChildren: './pages/dog/dog.module#DogPageModule' },
+  { path: 'reminder', loadChildren: './pages/reminder/reminder.module#ReminderPageModule' },
  
 ];
 

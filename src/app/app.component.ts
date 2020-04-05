@@ -63,7 +63,7 @@ export class AppComponent {
 
       {
         title: 'Reminders ',
-        url: '/home-accounts',
+        url: '/reminder',
         direct: 'forward',
         icon: 'alarm'
       },
