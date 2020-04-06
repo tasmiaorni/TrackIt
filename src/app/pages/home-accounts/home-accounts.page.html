@@ -8,91 +8,83 @@
           <ion-text color="light" class="fw700">Home</ion-text>
         </ion-text>
     </ion-title>
-    <ion-buttons slot="end">
-      <ion-button size="small" shape="round" color="medium" (click)="notifications()">
-        <ion-icon name="notifications"></ion-icon>
-        <ion-badge color="dark" slot="end">2</ion-badge>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-  <ion-toolbar color="dark">
-    <ion-searchbar [(ngModel)]="searchKey"></ion-searchbar>
-    <ion-buttons slot="end">
-      <ion-button size="small" shape="round" color="medium" (click)="searchFilter()">
-        <ion-icon name="options"></ion-icon>
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="light">
-  <ion-card no-margin class="no-radius">
-    <ion-item lines="none" color="medium">
+  <ion-card shape="round" expand="full">
+    <ion-item lines="none" class="bg-profile">
+      <ion-avatar slot="start">
+        <img src="assets/img/avatar.png" class="user-avatar">
+      </ion-avatar>
       <ion-label>
-        <h2 no-margin class="fw500 no-margin">
-          <ion-text color="dark">Your Bank Accounts</ion-text>
-        </h2>
-
-        <p class="text-11x no-margin">
-          <ion-text  color="primary">{{yourLocation}}</ion-text>
-        </p>
+        <ion-text color="light" padding>
+          <h2>
+            <strong>Welcome, Jane.</strong>
+          </h2>
+        </ion-text>
       </ion-label>
-      <ion-button shape="round" fill="outline" size="small" color="primary" (click)="alertLocation()">
-        Location
-        <ion-icon name="locate"></ion-icon>
-      </ion-button>
     </ion-item>
+
+    <ion-card-header>
+      <ion-card-subtitle>Total Balance (all accounts):<br></ion-card-subtitle>
+      <ion-card-title>2,101.99$</ion-card-title>
+  </ion-card-header>
   </ion-card>
 
-  <ion-card text-center padding color="primary">
-    <ion-label position="floating">
-      Chase Bank    *** 1234 <br>
-      <h3>55.21 $</h3>
-    </ion-label>
+    <ion-card>
+      <ion-card-header>
+        <ion-icon name="cash" slot="start"></ion-icon>
+        <ion-card-subtitle>Chase Bank (**1234)</ion-card-subtitle>
+        <ion-card-title>1,355.94$</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-subtitle>Available balance</ion-card-subtitle>
+      </ion-card-header>
+      <ion-item href="../home-results" class="ion-activated" color="primary">
+        <ion-icon name="swap" slot="start"></ion-icon>
+        <ion-label>Recent Transactions</ion-label>
+      </ion-item>
+      <ion-item href="../summary" class="ion-activated" color="primary">
+        <ion-icon name="wallet" slot="start"></ion-icon>
+        <ion-label>Expenditure Summary</ion-label>
+      </ion-item>
+    </ion-card>
 
-  </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-icon name="cash" slot="start"></ion-icon>
+        <ion-card-subtitle>Chase Freedom Credit Card (**9876)</ion-card-subtitle>
+        <ion-card-title>113.05$</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-subtitle>Available balance</ion-card-subtitle>
+      </ion-card-header>
+      <ion-item href="../home-results" class="ion-activated" color="primary">
+        <ion-icon name="swap" slot="start"></ion-icon>
+        <ion-label>Recent Transactions</ion-label>
+      </ion-item>
+      <ion-item href="../summary" class="ion-activated" color="primary">
+        <ion-icon name="wallet" slot="start"></ion-icon>
+        <ion-label>Expenditure Summary</ion-label>
+      </ion-item>
+    </ion-card>
 
-  <div class="center">
-    <ion-button  color="dark" fill="solid" (click)="presentImage(themeCover)" no-margin>
-      Go to
-     </ion-button>
-  </div>
-
-  <ion-card text-center padding color="primary">
-    <ion-label position="floating">
-      Wells Fargo    *** 1234 <br>
-      <h3>55.21 $</h3>
-    </ion-label>
-   
-  </ion-card>
-
-  <div class="center">
-    <ion-button  color="dark" fill="solid" (click)="presentImage(themeCover)" no-margin>
-      Go to
-     </ion-button>
-  </div>
-
-  <ion-card text-center padding color="primary">
-    <ion-label position="floating">
-      Chase Freedom Credit Card   *** 1234 <br>
-      <h3>55.21 $</h3>
-    </ion-label>
-  </ion-card>
-
-  
-   <!-- <ion-img [src]="themeCover"></ion-img> -->
-   <div class="center">
-    <ion-button  color="dark" fill="solid" (click)="presentImage(themeCover)" no-margin>
-      Go to
-     </ion-button>
-  </div>
-  
-
-
-  <ion-button icon-left margin shape="round" expand="full" color="secondary" (click)="goToTransactions()" tappable>
-    <ion-icon name="swap"></ion-icon>
-    See recent transactions
-  </ion-button>
+    <ion-card>
+      <ion-card-header>
+        <ion-icon name="cash" slot="start"></ion-icon>
+        <ion-card-subtitle>Wells Fargo (**4567)</ion-card-subtitle>
+        <ion-card-title>633.00$</ion-card-title>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-subtitle>Available balance</ion-card-subtitle>
+      </ion-card-header>
+      <ion-item href="../home-results" class="ion-activated" color="primary">
+        <ion-icon name="swap" slot="start"></ion-icon>
+        <ion-label>Recent Transactions</ion-label>
+      </ion-item>
+      <ion-item href="../summary" class="ion-activated" color="primary">
+        <ion-icon name="wallet" slot="start"></ion-icon>
+        <ion-label>Expenditure Summary</ion-label>
+      </ion-item>
+    </ion-card>
 
 
 </ion-content>
