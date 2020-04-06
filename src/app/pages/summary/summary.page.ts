@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Bucket } from '../../interfaces/bucket';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-summary',
@@ -9,7 +10,7 @@ import { Bucket } from '../../interfaces/bucket';
 export class SummaryPage implements OnInit {
   public appBuckets: Array<Bucket>;
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
     this.appBuckets = [
       {
         id: 1,
@@ -38,6 +39,7 @@ export class SummaryPage implements OnInit {
     
   }
 
+
   addBucket( )
   {
     var item = {
@@ -47,6 +49,10 @@ export class SummaryPage implements OnInit {
     }
   this.appBuckets.push(item);
 
+  }
+
+  goToHome() {
+    this.navCtrl.navigateRoot('/home-accounts');
   }
 
 }
