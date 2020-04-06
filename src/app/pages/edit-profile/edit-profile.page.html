@@ -14,8 +14,8 @@
       <h1 class="fw500">Jane Doe</h1>
       <h2 color="light" margin-bottom>Customer</h2>
       <ion-button icon-left color="secondary">
-        <ion-icon name="photos"></ion-icon> 
-        Edit / Add Avatar
+        <ion-icon name="photos" slot="start"></ion-icon> 
+        <ion-label>Edit / Add Avatar</ion-label>
       </ion-button>
     </ion-card-content>
   
@@ -84,8 +84,8 @@
             </ion-list-header>
 
             <ion-item>
-              <ion-label class="text-1x">For the future, I'd like to receive news and updates from TrackIT Inc. via email.</ion-label>
-              <ion-checkbox></ion-checkbox>
+              For the future, I'd like to receive news and updates from TrackIT Inc. via email.
+              <ion-checkbox slot="end"></ion-checkbox>
             </ion-item>
           </ion-list>
   
