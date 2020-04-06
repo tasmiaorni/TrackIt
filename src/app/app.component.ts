@@ -56,7 +56,7 @@ export class AppComponent {
 
       {
         title: 'Set Payments',
-        url: '/home-accounts',
+        url: '/set-payments',
         direct: 'forward',
         icon: 'cash'
       },

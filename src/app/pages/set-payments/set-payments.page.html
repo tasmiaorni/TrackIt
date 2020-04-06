@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="secondary"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>
+      <ion-text color="light"> 
+        <ion-text color="light" class=fw700>Set Payments</ion-text>
+      </ion-text>
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button size="small" shape="round" color="medium" (click)="notifications()">
+        <ion-icon name="notifications"></ion-icon>
+        <ion-badge color="dark" slot="end">2</ion-badge>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid fixed no-padding>
+    <ion-row>
+      <ion-col size="12" padding>
+        
+        <ion-list >
+          <ion-item  detail="false" color="primary">
+            <ion-icon name="apps-outline" slot="start"></ion-icon>
+            <ion-label>Set a new Payment</ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="dark" position="stacked">From:</ion-label>
+              <ion-select>
+                <ion-select-option value="Chase Bank *** 1234">Chase Bank *** 1234</ion-select-option>
+                <ion-select-option value="Wells Fargo *** 1234">Wells Fargo *** 1234</ion-select-option>
+                <ion-select-option value="Chase Freedom Credit Card *** 1234">Chase Freedom Credit Card *** 1234</ion-select-option>
+              </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="dark" position="stacked">To:</ion-label>
+              <ion-select>
+                <ion-select-option value="Mortgage">Mortgage</ion-select-option>
+                <ion-select-option value="FPL">FPL</ion-select-option>
+                <ion-select-option value="WaterAndSewer">Water and Sewer</ion-select-option>
+                <ion-select-option value="Internet">Internet</ion-select-option>
+              </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="dark" position="stacked">Amount:</ion-label>
+            <ion-input inputmode="number" placeholder="$" ></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="dark" position="stacked">Frequency:</ion-label>
+              <ion-select>
+                <ion-select-option value="OneTimeOnly">One Time Only</ion-select-option>
+                <ion-select-option value="Weekly">Weekly</ion-select-option>
+                <ion-select-option value="Monthly">Monthly</ion-select-option>
+              </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="dark" position="stacked">Start Date:</ion-label>
+            <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" min="2020" max="2021"></ion-datetime>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="dark" position="stacked">End Date:</ion-label>
+            <ion-datetime displayFormat="MMM DD YYYY" placeholder="Select Date" min="2020" max="2021"></ion-datetime>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button size="large" expand="full" color="dark" (click)="sendData()" no-margin>Save</ion-button>
+</ion-content>
+
+

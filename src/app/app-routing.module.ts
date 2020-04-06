@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'fun', loadChildren: './pages/fun/fun.module#FunPageModule' },
   { path: 'dog', loadChildren: './pages/dog/dog.module#DogPageModule' },
   { path: 'reminder', loadChildren: './pages/reminder/reminder.module#ReminderPageModule' },
+  { path: 'set-payments', loadChildren: './pages/set-payments/set-payments.module#SetPaymentsPageModule' },
  
 ];
 
