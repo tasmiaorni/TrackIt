@@ -49,7 +49,7 @@ export class AppComponent {
       },
       {
         title: 'Set Accounts',
-        url: '/home-accounts',
+        url: '/set-accounts',
         direct: 'forward',
         icon: 'grid'
       },
