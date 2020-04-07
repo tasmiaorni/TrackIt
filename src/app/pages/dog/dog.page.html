@@ -5,55 +5,27 @@
     </ion-buttons>
     <ion-title>
         <ion-text color="light">
-          <ion-text color="light" class="fw700"> Pet</ion-text>
+          <ion-text color="light" class="fw700">Pet</ion-text>
         </ion-text>
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button size="small" shape="round" color="medium" (click)="notifications()">
-        <ion-icon name="notifications"></ion-icon>
-        <ion-badge color="dark" slot="end">2</ion-badge>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-  <ion-toolbar color="dark">
-    <ion-searchbar [(ngModel)]="searchKey"></ion-searchbar>
-    <ion-buttons slot="end">
-      <ion-button size="small" shape="round" color="medium" (click)="searchFilter()">
-        <ion-icon name="options"></ion-icon>
+      <ion-button size="small" shape="round" color="medium" (click)="goToHome()">
+        <ion-icon name="home"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card no-margin class="no-radius">
-    <ion-item lines="none" color="medium">
-      <ion-label>
-        <h2 no-margin class="fw500 no-margin">
-          <ion-text color="dark">Alert / Toast test</ion-text>
-        </h2>
-
-        <p class="text-11x no-margin">
-          <ion-text  color="primary">{{yourLocation}}</ion-text>
-        </p>
-      </ion-label>
-      <ion-button shape="round" fill="outline" size="small" color="primary" (click)="alertLocation()">
-        Location
-        <ion-icon name="locate"></ion-icon>
-      </ion-button>
-    </ion-item>
-  </ion-card>
-
-
-
+ 
   <ion-card>
     <ion-card-header>
       <ion-icon name="cash" slot="start"></ion-icon>
       <ion-card-subtitle>Pending</ion-card-subtitle>
-      <ion-card-title color="success">+15.00$</ion-card-title>
+      <ion-card-title>89.99</ion-card-title>
       <ion-card-subtitle></ion-card-subtitle>
-      <ion-card-subtitle>Pet parlour</ion-card-subtitle>
-      <ion-card-subtitle>3/30/2020</ion-card-subtitle>
+      <ion-card-subtitle>Pet Parlour Inc.</ion-card-subtitle>
+      <ion-card-subtitle>4/7/2020</ion-card-subtitle>
     </ion-card-header>
    <!-- <ion-item button (click)="togglePopupMenu()" detail color="primary">
       <ion-icon name="apps" slot="start"></ion-icon>
@@ -65,10 +37,10 @@
     <ion-card-header>
       <ion-icon name="cash" slot="start"></ion-icon>
       <ion-card-subtitle>Posted</ion-card-subtitle>
-      <ion-card-title color="success">+15.00$</ion-card-title>
+      <ion-card-title>43.21$</ion-card-title>
       <ion-card-subtitle></ion-card-subtitle>
-      <ion-card-subtitle>Cotsco shopping</ion-card-subtitle>
-      <ion-card-subtitle>3/30/2020</ion-card-subtitle>
+      <ion-card-subtitle>Cotsco Shopping Inc.</ion-card-subtitle>
+      <ion-card-subtitle>4/4/2020</ion-card-subtitle>
     </ion-card-header>
     <!--<ion-item button (click)="togglePopupMenu()" detail color="primary">
       <ion-icon name="apps" slot="start"></ion-icon>

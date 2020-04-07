@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'insurance', loadChildren: './pages/insurance/insurance.module#InsurancePageModule' },
   { path: 'health', loadChildren: './pages/health/health.module#HealthPageModule' },
   { path: 'fun', loadChildren: './pages/fun/fun.module#FunPageModule' },
+  { path: 'other', loadChildren: './pages/other/other.module#OtherPageModule' },
   { path: 'dog', loadChildren: './pages/dog/dog.module#DogPageModule' },
   { path: 'reminder', loadChildren: './pages/reminder/reminder.module#ReminderPageModule' },
  
