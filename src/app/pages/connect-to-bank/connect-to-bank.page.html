@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="set-accounts" disabled="false"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card padding>
+    <ion-card-header>
+      <ion-card-title>Connect to Bank</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content padding>
+      <ion-item>
+        <ion-label color="dark" position="stacked">Login name:</ion-label>
+        <ion-input inputmode="text" placeholder="Enter your Bank username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="dark" position="stacked">Password:</ion-label>
+        <ion-input inputmode="text" placeholder="Enter your Bank password"></ion-input>
+      </ion-item>
+
+      <ion-button padding shape="round" size="medium" color="primary" (click)="alertConnect()">
+        OK
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

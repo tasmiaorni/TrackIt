@@ -49,14 +49,14 @@ export class AppComponent {
       },
       {
         title: 'Set Accounts',
-        url: '/home-accounts',
+        url: '/set-accounts',
         direct: 'forward',
         icon: 'grid'
       },
 
       {
         title: 'Set Payments',
-        url: '/home-accounts',
+        url: '/set-payments',
         direct: 'forward',
         icon: 'cash'
       },

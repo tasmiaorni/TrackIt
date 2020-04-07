@@ -18,6 +18,9 @@ const routes: Routes = [
   { path: 'other', loadChildren: './pages/other/other.module#OtherPageModule' },
   { path: 'dog', loadChildren: './pages/dog/dog.module#DogPageModule' },
   { path: 'reminder', loadChildren: './pages/reminder/reminder.module#ReminderPageModule' },
+  { path: 'set-payments', loadChildren: './pages/set-payments/set-payments.module#SetPaymentsPageModule' },
+  { path: 'set-accounts', loadChildren: './pages/set-accounts/set-accounts.module#SetAccountsPageModule' },
+  { path: 'connect-to-bank', loadChildren: './pages/connect-to-bank/connect-to-bank.module#ConnectToBankPageModule' },
  
 ];
 
