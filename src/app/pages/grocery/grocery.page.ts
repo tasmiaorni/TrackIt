@@ -15,4 +15,8 @@ export class GroceryPage implements OnInit {
   goBack(){
     this.navCtrl.navigateForward('summary');
   }
+
+  goToHome() {
+    this.navCtrl.navigateRoot('/home-accounts');
+  }
 }
