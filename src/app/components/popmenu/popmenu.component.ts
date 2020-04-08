@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController,AlertController ,ModalController,PopoverController} from '@ionic/angular';
+import { LoadedRouterConfig } from '@angular/router/src/config';
 
 
 @Component({
@@ -13,7 +14,8 @@ export class PopmenuComponent implements OnInit {
   constructor(public navCtrl: NavController,
     public alertCtrl: AlertController,
     public mdlCtrl:ModalController,
-    public popCtrl:PopoverController) { }
+    public popCtrl:PopoverController,
+    ) { }
 
   ngOnInit() {
   }
@@ -22,5 +24,19 @@ export class PopmenuComponent implements OnInit {
     return this.openMenu = !this.openMenu;
   }
  
+  async addCategory() {
+    const alert = await this.alertCtrl.create({
+      header:'Alert',
+     // subHeader:'Subtitle',
+      message:'Your category is added',
+      buttons:['OK']
+    });
   
-}
+    await alert.present();
+    let result=await alert.onDidDismiss();
+    console.log(result);
+    }
+
+  }
+  
+
