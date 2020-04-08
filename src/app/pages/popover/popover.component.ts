@@ -3,11 +3,11 @@ import { NavController,AlertController ,ModalController,PopoverController} from 
 
 
 @Component({
-  selector: 'popmenu',
-  templateUrl: './popmenu.component.html',
-  styleUrls: ['./popmenu.component.scss']
+  selector: 'app-popover',
+  templateUrl: './popover.component.html',
+  styleUrls: ['./popover.component.scss']
 })
-export class PopmenuComponent implements OnInit {
+export class PopoverComponent implements OnInit {
   openMenu: Boolean = false;
 
   constructor(public navCtrl: NavController,
@@ -17,10 +17,8 @@ export class PopmenuComponent implements OnInit {
 
   ngOnInit() {
   }
-
   togglePopupMenu() {
     return this.openMenu = !this.openMenu;
   }
- 
-  
+
 }

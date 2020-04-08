@@ -5,13 +5,16 @@ import {
   MenuController,
   ToastController,
   PopoverController,
-  ModalController } from '@ionic/angular';
+  ModalController,
+  LoadingController } from '@ionic/angular';
 
 // Modals
 import { SearchFilterPage } from '../../pages/modal/search-filter/search-filter.page';
 import { ImagePage } from './../modal/image/image.page';
 // Call notifications test by Popover and Custom Component.
 import { NotificationsComponent } from './../../components/notifications/notifications.component';
+import { PopmenuComponent } from 'src/app/components/popmenu/popmenu.component';
+import {PopoverComponent} from '../popover/popover.component';
 
 @Component({
   selector: 'app-home-results',
@@ -22,16 +25,18 @@ export class HomeResultsPage {
   searchKey = '';
   yourLocation = '123 Test Street';
   themeCover = 'assets/img/ionic4-Start-Theme-cover.jpg';
-
+  openMenu: Boolean = false;
   constructor(
     public navCtrl: NavController,
     public menuCtrl: MenuController,
     public popoverCtrl: PopoverController,
     public alertCtrl: AlertController,
     public modalCtrl: ModalController,
-    public toastCtrl: ToastController
+    public toastCtrl: ToastController,
+    
+ 
   ) {
-
+ 
   }
 
   ionViewWillEnter() {
@@ -110,5 +115,20 @@ export class HomeResultsPage {
     this.navCtrl.navigateRoot('/home-accounts');
   }
 
+
+  async presentPopover(ev:any) {
+    const popover = await this.popoverCtrl.create({
+      component: PopmenuComponent,
+      event: ev,
+      translucent: true
+    });
+    return await popover.present();
+  }
+
+  
+
+ 
+
+ 
 
 }

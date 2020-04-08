@@ -17,6 +17,8 @@ import { SearchFilterPageModule } from './pages/modal/search-filter/search-filte
 
 // Components
 import { NotificationsComponent } from './components/notifications/notifications.component';
+import {PopmenuComponent} from './components/popmenu/popmenu.component';
+//import {PopoverComponent} from '../app/pages/popover/popover.component';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { NotificationsComponent } from './components/notifications/notifications
     AppRoutingModule,
     HttpClientModule,
     ImagePageModule,
-    SearchFilterPageModule
+    SearchFilterPageModule,
+   
   ],
   entryComponents: [NotificationsComponent],
   providers: [
@@ -36,7 +39,7 @@ import { NotificationsComponent } from './components/notifications/notifications
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 
 export class AppModule {}

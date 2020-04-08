@@ -16,6 +16,7 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
   
   <ion-card>
@@ -28,7 +29,7 @@
       <ion-card-subtitle>QuickPay with Zelle</ion-card-subtitle>
       <ion-card-subtitle>From: John Doe</ion-card-subtitle>
     </ion-card-header>
-    <ion-item button (click)="togglePopupMenu()" detail color="primary">
+    <ion-item button (click)="presentPopover()" detail color="primary">
       <ion-icon name="apps" slot="start"></ion-icon>
       <ion-label>Assign Category</ion-label>
     </ion-item>
@@ -43,7 +44,7 @@
       <ion-card-subtitle>Walmart Ref.: 34722</ion-card-subtitle>
       <ion-card-subtitle>To: Walmart Inc.</ion-card-subtitle>
     </ion-card-header>
-    <ion-item button (click)="togglePopupMenu()" detail color="primary">
+    <ion-item detail color="primary">
       <ion-icon name="apps" slot="start"></ion-icon>
       <ion-label>Assign Category</ion-label>
     </ion-item>
@@ -53,6 +54,7 @@
     <ion-label>Skip</ion-label>
   </ion-button>
   
-  <!--<popmenu></popmenu>-->
+  <popmenu></popmenu>
+ 
 </ion-content>
-  
+

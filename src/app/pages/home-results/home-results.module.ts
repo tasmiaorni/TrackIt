@@ -4,8 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
-//import { PopmenuComponent } from './../../components/popmenu/popmenu.component';
-
+import { PopmenuComponent } from './../../components/popmenu/popmenu.component';
+import {PopoverComponent} from './../popover/popover.component';
 import { HomeResultsPage } from './home-results.page';
 
 const routes: Routes = [
@@ -21,8 +21,11 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    
+    
   ],
-  declarations: [HomeResultsPage]
+  declarations: [HomeResultsPage, PopmenuComponent,PopoverComponent],
+  entryComponents: [PopmenuComponent]
 })
 export class HomeResultsPageModule {}
