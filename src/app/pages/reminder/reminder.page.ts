@@ -35,4 +35,8 @@ export class ReminderPage implements OnInit {
     });
   }
 
+  goToHome() {
+    this.navCtrl.navigateRoot('/home-accounts');
+  }
+
 }

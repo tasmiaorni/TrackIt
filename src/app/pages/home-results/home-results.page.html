@@ -19,8 +19,8 @@
 
 <ion-content>
   
-  <ion-card>
-    <ion-card-header>
+  <ion-card  >
+    <ion-card-header > 
       <ion-icon name="cash" slot="start"></ion-icon>
       <ion-card-subtitle>Pending</ion-card-subtitle>
      
@@ -29,14 +29,19 @@
       <ion-card-subtitle>QuickPay with Zelle</ion-card-subtitle>
       <ion-card-subtitle>From: John Doe</ion-card-subtitle>
     </ion-card-header>
-    <ion-item button (click)="presentPopover()" detail color="primary">
-      <ion-icon name="apps" slot="start"></ion-icon>
-      <ion-label>Assign Category</ion-label>
+
+    <ion-item>
+      <ion-icon name="settings" slot="start" color="primary"></ion-icon>
+      <ion-label color="primary">Assign Category</ion-label>
+      <ion-select [(ngModel)]="lang1">
+        <ion-select-option *ngFor="let category of categories" [value]="category">{{category}}</ion-select-option>
+      </ion-select>
     </ion-item>
+
   </ion-card>
 
   <ion-card>
-    <ion-card-header>
+    <ion-card-header > 
       <ion-icon name="cash" slot="start"></ion-icon>
       <ion-card-subtitle>3/30/2020</ion-card-subtitle>
       <ion-card-title >20.55$</ion-card-title>
@@ -44,17 +49,23 @@
       <ion-card-subtitle>Walmart Ref.: 34722</ion-card-subtitle>
       <ion-card-subtitle>To: Walmart Inc.</ion-card-subtitle>
     </ion-card-header>
-    <ion-item detail color="primary">
-      <ion-icon name="apps" slot="start"></ion-icon>
-      <ion-label>Assign Category</ion-label>
+    
+    <ion-item>
+      <ion-icon name="settings" slot="start" color="primary"></ion-icon>
+      <ion-label color="primary">Assign Category</ion-label>
+      <ion-select [(ngModel)]="lang2">
+        <ion-select-option *ngFor="let item of categories" [value]="item">{{item}}</ion-select-option>
+      </ion-select>
     </ion-item>
+
   </ion-card>
 
   <ion-button margin shape="round" expand="full" color="secondary" class="ion-activated" href="../summary">
     <ion-label>Skip</ion-label>
   </ion-button>
-  
-  <popmenu></popmenu>
+
  
+  
+ <!--<popmenu></popmenu>-->
 </ion-content>
 

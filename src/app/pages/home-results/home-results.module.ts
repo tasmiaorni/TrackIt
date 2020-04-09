@@ -5,7 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { PopmenuComponent } from './../../components/popmenu/popmenu.component';
-import {PopoverComponent} from './../popover/popover.component';
 import { HomeResultsPage } from './home-results.page';
 
 const routes: Routes = [
@@ -25,7 +24,7 @@ const routes: Routes = [
     
     
   ],
-  declarations: [HomeResultsPage, PopmenuComponent,PopoverComponent],
-  entryComponents: [PopmenuComponent]
+  declarations: [HomeResultsPage],
+
 })
 export class HomeResultsPageModule {}

@@ -9,7 +9,7 @@ import { LoadedRouterConfig } from '@angular/router/src/config';
   styleUrls: ['./popmenu.component.scss']
 })
 export class PopmenuComponent implements OnInit {
-  openMenu: Boolean = false;
+    openMenu: Boolean = false;
 
   constructor(public navCtrl: NavController,
     public alertCtrl: AlertController,
@@ -20,13 +20,13 @@ export class PopmenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  togglePopupMenu() {
+   togglePopupMenu() {
     return this.openMenu = !this.openMenu;
   }
  
   async addCategory() {
     const alert = await this.alertCtrl.create({
-      header:'Alert',
+      header:'Success',
      // subHeader:'Subtitle',
       message:'Your category is added',
       buttons:['OK']

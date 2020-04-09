@@ -31,4 +31,8 @@ export class SettingsPage implements OnInit {
     this.navCtrl.navigateRoot('/');
   }
 
+  goToHome() {
+    this.navCtrl.navigateRoot('/home-accounts');
+  }
+
 }

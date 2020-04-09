@@ -8,34 +8,50 @@
 <div class="popup-menu">
   <div class="popup-menu-overlay" [ngClass]="{'in': openMenu}"></div>
   <div class="popup-menu-panel" [ngClass]="{'in': openMenu}">
+
     <div class="popup-menu-item">
-      <ion-icon name="home" slot="middle" size="large"></ion-icon>
+      <ion-icon name="home" slot="start" size="large"></ion-icon>
+     
+     <span>
       <ion-button (click)="addCategory()">Rent + Car</ion-button>
-     <!---<span>Rent + Car</span>-->
+      </span>
     </div>
+
     <div class="popup-menu-item">
-      <ion-icon name="folder" slot="middle" size="large"></ion-icon>
+      <ion-icon name="folder" slot="start" size="large"></ion-icon>
+      <span>
       <ion-button (click)="addCategory()">Insurance</ion-button>
+      </span>
     </div>
     <div class="popup-menu-item">
       <ion-icon name="cart" slot="middle" size="large"></ion-icon>
-      <ion-button (click)="addCategory()">Groceries</ion-button>
+      <span>
+        <ion-button (click)="addCategory()">Groceries</ion-button>
+        </span>
     </div>
     <div class="popup-menu-item">
       <ion-icon name="paw" slot="middle" size="large"></ion-icon>
-      <ion-button (click)="addCategory()">Dog</ion-button>
+      <span>
+        <ion-button (click)="addCategory()">Dog</ion-button>
+        </span>
     </div>
     <div class="popup-menu-item">
       <ion-icon name="medkit" slot="middle" size="large"></ion-icon>
-      <ion-button (click)="addCategory()">Health</ion-button>
+      <span>
+        <ion-button (click)="addCategory()">Health</ion-button>
+        </span>
     </div>
     <div class="popup-menu-item">
       <ion-icon name="beer" slot="middle" size="large"></ion-icon>
-      <ion-button (click)="addCategory()">Fun</ion-button>
+      <span>
+        <ion-button (click)="addCategory()">Fun</ion-button>
+        </span>
     </div>
     <div class="popup-menu-item">
       <ion-icon name="apps" slot="middle" size="large"></ion-icon>
-      <ion-button (click)="addCategory()">Other</ion-button>
+      <span>
+        <ion-button (click)="addCategory()">Other</ion-button>
+        </span>
     </div>
   </div>
 </div>

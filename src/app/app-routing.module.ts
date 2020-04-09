@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NotificationsComponent } from './components/notifications/notifications.component';
+import {PopmenuComponent} from './components/popmenu/popmenu.component';
 
 const routes: Routes = [
   { path: '', loadChildren: './pages/login/login.module#LoginPageModule' },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'set-payments', loadChildren: './pages/set-payments/set-payments.module#SetPaymentsPageModule' },
   { path: 'set-accounts', loadChildren: './pages/set-accounts/set-accounts.module#SetAccountsPageModule' },
   { path: 'connect-to-bank', loadChildren: './pages/connect-to-bank/connect-to-bank.module#ConnectToBankPageModule' },
+
   
 
  

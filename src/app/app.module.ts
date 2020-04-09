@@ -18,7 +18,6 @@ import { SearchFilterPageModule } from './pages/modal/search-filter/search-filte
 // Components
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import {PopmenuComponent} from './components/popmenu/popmenu.component';
-//import {PopoverComponent} from '../app/pages/popover/popover.component';
 
 
 @NgModule({

@@ -11,11 +11,11 @@ import {
 // Modals
 import { SearchFilterPage } from '../../pages/modal/search-filter/search-filter.page';
 import { ImagePage } from './../modal/image/image.page';
+
 // Call notifications test by Popover and Custom Component.
+
 import { NotificationsComponent } from './../../components/notifications/notifications.component';
 import { PopmenuComponent } from 'src/app/components/popmenu/popmenu.component';
-import {PopoverComponent} from '../popover/popover.component';
-
 @Component({
   selector: 'app-home-results',
   templateUrl: './home-results.page.html',
@@ -25,7 +25,15 @@ export class HomeResultsPage {
   searchKey = '';
   yourLocation = '123 Test Street';
   themeCover = 'assets/img/ionic4-Start-Theme-cover.jpg';
-  openMenu: Boolean = false;
+
+  displayList: boolean = false;
+
+  lang1: any;
+  lang2:any;
+
+
+  categories: any = ['Rent + Car', 'Insurance','Groceries', 'Pet','Health','Fun','Other'];
+ 
   constructor(
     public navCtrl: NavController,
     public menuCtrl: MenuController,
@@ -116,17 +124,20 @@ export class HomeResultsPage {
   }
 
 
-  async presentPopover(ev:any) {
-    const popover = await this.popoverCtrl.create({
-      component: PopmenuComponent,
-      event: ev,
-      translucent: true
-    });
-    return await popover.present();
-  }
 
+
+    async popMenu(ev: any) {
+      const popover = await this.popoverCtrl.create({
+        component: NotificationsComponent,
+        event: ev,
+        animated: true,
+        showBackdrop: true
+      });
+      return await popover.present();
+    }
   
-
+  
+  
  
 
  
