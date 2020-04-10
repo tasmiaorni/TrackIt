@@ -35,7 +35,7 @@ export class AppComponent {
         icon: 'information-circle-outline'
       },
       {
-        title: 'Account Summary',
+        title: 'Expenditure Summary',
         url: '/summary',
         direct: 'forward',
         icon: 'podium'
