@@ -3,7 +3,7 @@ import { AlertController,
         ToastController,
         NavController,
         LoadingController
-        } from '@ionic/angular'
+        } from '@ionic/angular';
 import { async } from '@angular/core/testing';
 
 @Component({

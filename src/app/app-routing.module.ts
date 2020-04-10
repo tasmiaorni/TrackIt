@@ -22,7 +22,8 @@ const routes: Routes = [
   { path: 'reminder', loadChildren: './pages/reminder/reminder.module#ReminderPageModule' },
   { path: 'set-payments', loadChildren: './pages/set-payments/set-payments.module#SetPaymentsPageModule' },
   { path: 'set-accounts', loadChildren: './pages/set-accounts/set-accounts.module#SetAccountsPageModule' },
-  { path: 'connect-to-bank', loadChildren: './pages/connect-to-bank/connect-to-bank.module#ConnectToBankPageModule' },
+  { path: 'connect-to-bank', loadChildren: './pages/connect-to-bank/connect-to-bank.module#ConnectToBankPageModule' },  { path: 'save-bucket', loadChildren: './pages/save-bucket/save-bucket.module#SaveBucketPageModule' },
+
 
   
 

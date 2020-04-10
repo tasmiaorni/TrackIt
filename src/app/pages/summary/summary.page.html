@@ -41,12 +41,15 @@
   </ion-card>
 
 
-  
- <!-- <ion-card text-center padding color="primary">
-    <h2>Total Expense</h2>
-    <h3>800.21 $</h3>
-  </ion-card>-->
 
+<ion-card *ngFor="let p of appBucket">
+  <ion-item  [routerLink]="[p.url]"  class="ion-activated">
+    <ion-icon [name]="p.icon" slot="start"></ion-icon>
+    <ion-label>  {{p.title}}</ion-label>
+    <ion-button fill="solid" color="success" slot="end" size="default">  {{p.amount}} $</ion-button>
+  </ion-item>
+</ion-card>
+<!---
   <ion-card>
     <ion-item href="../rent-car" class="ion-activated">
       <ion-icon name="home" slot="start"></ion-icon>
@@ -89,10 +92,10 @@
       <ion-label>Other</ion-label>
       <ion-button fill="solid" color="success" slot="end" size="default">89.99$</ion-button>
     </ion-item>
-  </ion-card>
+  </ion-card>-->
 
 
-  <ion-button margin shape="round" expand="full" color="secondary" (click)="goToHome()">
+  <ion-button  href="../save-bucket" margin shape="round" expand="full" color="secondary" >
     <ion-icon name="brush" slot="start"></ion-icon>
     <ion-label>Edit</ion-label>
   </ion-button>

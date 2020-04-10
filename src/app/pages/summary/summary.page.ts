@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Bucket } from '../../interfaces/bucket';
-import { NavController } from '@ionic/angular';
+import { NavController,NavParams } from '@ionic/angular';
 
 @Component({
   selector: 'app-summary',
@@ -8,29 +8,67 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./summary.page.scss'],
 })
 export class SummaryPage implements OnInit {
-  public appBuckets: Array<Bucket>;
+  
+  public appBucket: Array<Bucket>;
+  
+//public navParams:NavParams
+  constructor(public navCtrl: NavController
+    ) {
 
-  constructor(public navCtrl: NavController) {
-    this.appBuckets = [
+    this.appBucket = [
       {
-        id: 1,
-        text: 'Grocery',
-        value: 55.21,
-  
+        title: "Rent+Car",
+        amount: 1105.00,
+        url: '/rent-car',
+        direct: 'forward',
+        icon:"home",
       },
       {
-        id: 2,
-        text: 'Rent',
-        value: 55.21,
-  
+        title: "Insurance",
+        amount: 455.00,
+        url: '/insurance',
+        direct: 'forward',
+        icon:"folder",
       },
       {
-        id: 1,
-        text: 'Fun',
-        value: 55.21,
-  
+        title: "Groceries",
+        amount: 522.30,
+        url: '/grocery',
+        direct: 'forward',
+        icon:"cart",
       },
 
+      {
+        title: "Pet",
+        amount: 133.20,
+        url: '/dog',
+        direct: 'forward',
+        icon:"paw",
+      },
+
+      {
+        title: "Health",
+        amount: 495.00,
+        url: '/health',
+        direct: 'forward',
+        icon:"medkit",
+      },
+
+      {
+        title: "Fun",
+        amount: 226.90,
+        url: '/fun',
+        direct: 'forward',
+        icon:"beer",
+      },
+
+      {
+        title: "Other",
+        amount: 89.99,
+        url: '/other',
+        direct: 'forward',
+        icon:"apps",
+      },
     ];
    }
  
@@ -39,17 +77,20 @@ export class SummaryPage implements OnInit {
     
   }
 
+ 
+  /*storeNewBucket(newValue:any){
+  
 
-  addBucket( )
-  {
-    var item = {
-    "id":4,
-    "text": "New Item",
-    "value": 34
-    }
-  this.appBuckets.push(item);
-
-  }
+    let titleGot=this.navParams.get('titleVal');
+    let amountGot=this.navParams.get('amountVal');
+    let newBucket: Bucket;
+    newBucket={
+      title:titleGot,
+      amount:amountGot,
+      url:'/summary',
+    };
+    this.appBucket.push(newValue);
+  }*/
 
   goToHome() {
     this.navCtrl.navigateRoot('/home-accounts');

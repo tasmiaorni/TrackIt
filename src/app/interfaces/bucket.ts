@@ -1,6 +1,7 @@
 export interface Bucket {
-    id:number;
-    text:string;
-    value:number;
+    title: string;
+    amount: number;
+    url: any;
+    direct?: string;
+    icon?: string;
 }
-
