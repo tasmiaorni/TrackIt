@@ -4,4 +4,5 @@ export interface Bucket {
     url: any;
     direct?: string;
     icon?: string;
+    color:string;
 }

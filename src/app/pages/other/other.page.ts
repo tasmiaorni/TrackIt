@@ -15,7 +15,7 @@ export class OtherPage implements OnInit {
   }
 
   goBack(){
-    this.navCtrl.navigateForward('summary');
+    this.navCtrl.navigateBack('summary');
   }
 
   goToHome() {

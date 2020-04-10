@@ -41,12 +41,11 @@
   </ion-card>
 
 
-
 <ion-card *ngFor="let p of appBucket">
   <ion-item  [routerLink]="[p.url]"  class="ion-activated">
     <ion-icon [name]="p.icon" slot="start"></ion-icon>
     <ion-label>  {{p.title}}</ion-label>
-    <ion-button fill="solid" color="success" slot="end" size="default">  {{p.amount}} $</ion-button>
+    <ion-button fill="solid" [color]="p.color" slot="end" size="default">  {{p.amount}} $</ion-button>
   </ion-item>
 </ion-card>
 <!---

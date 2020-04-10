@@ -22,6 +22,7 @@ export class SummaryPage implements OnInit {
         url: '/rent-car',
         direct: 'forward',
         icon:"home",
+        color:"success"
       },
       {
         title: "Insurance",
@@ -29,6 +30,7 @@ export class SummaryPage implements OnInit {
         url: '/insurance',
         direct: 'forward',
         icon:"folder",
+        color:"success"
       },
       {
         title: "Groceries",
@@ -36,6 +38,7 @@ export class SummaryPage implements OnInit {
         url: '/grocery',
         direct: 'forward',
         icon:"cart",
+        color:"warning"
       },
 
       {
@@ -44,6 +47,7 @@ export class SummaryPage implements OnInit {
         url: '/dog',
         direct: 'forward',
         icon:"paw",
+        color:"danger"
       },
 
       {
@@ -52,6 +56,7 @@ export class SummaryPage implements OnInit {
         url: '/health',
         direct: 'forward',
         icon:"medkit",
+        color:"danger"
       },
 
       {
@@ -60,6 +65,7 @@ export class SummaryPage implements OnInit {
         url: '/fun',
         direct: 'forward',
         icon:"beer",
+        color:'warning'
       },
 
       {
@@ -68,6 +74,7 @@ export class SummaryPage implements OnInit {
         url: '/other',
         direct: 'forward',
         icon:"apps",
+        color:"success"
       },
     ];
    }

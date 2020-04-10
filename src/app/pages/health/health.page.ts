@@ -13,7 +13,7 @@ export class HealthPage implements OnInit {
   ngOnInit() {
   }
   goBack(){
-    this.navCtrl.navigateForward('summary');
+    this.navCtrl.navigateBack('summary');
   }
 
   goToHome() {

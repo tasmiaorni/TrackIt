@@ -22,7 +22,7 @@ export class SaveBucketPage implements OnInit {
     public toastCtrl: ToastController,
     public navCtrl: NavController,
     public loadingCtrl: LoadingController,
-    public navParams:NavParams,
+   // public navParams:NavParams,
     //public summary:SummaryPage
     ) { }
 
@@ -83,4 +83,5 @@ export class SaveBucketPage implements OnInit {
     });
     await alert.present();
   }
+
 }

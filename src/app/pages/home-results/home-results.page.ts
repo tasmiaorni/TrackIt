@@ -31,7 +31,7 @@ export class HomeResultsPage {
   lang1: any;
   lang2:any;
 
-
+  icon:any=["home"]
   categories: any = ['Rent + Car', 'Insurance','Groceries', 'Pet','Health','Fun','Other'];
  
   constructor(

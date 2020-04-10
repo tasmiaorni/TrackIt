@@ -14,7 +14,7 @@ export class DogPage implements OnInit {
   ngOnInit() {
   }
   goBack(){
-    this.navCtrl.navigateForward('summary');
+    this.navCtrl.navigateBack('summary');
   }
   goToHome() {
     this.navCtrl.navigateRoot('/home-accounts');
