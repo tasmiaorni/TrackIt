@@ -30,9 +30,9 @@
       <ion-card-subtitle>From: John Doe</ion-card-subtitle>
     </ion-card-header>
 
-    <ion-item>
+    <ion-item  color="secondary">
       <ion-icon name="settings" slot="start" color="primary"></ion-icon>
-      <ion-label color="primary">Assign Category</ion-label>
+      <ion-label >Assign Category</ion-label>
       <ion-select [(ngModel)]="lang1">
         <ion-select-option *ngFor="let category of categories" [value]="category">{{category}}</ion-select-option>
       </ion-select>
@@ -50,9 +50,9 @@
       <ion-card-subtitle>To: Walmart Inc.</ion-card-subtitle>
     </ion-card-header>
     
-    <ion-item>
+    <ion-item  color="secondary">
       <ion-icon name="settings" slot="start" color="primary"></ion-icon>
-      <ion-label color="primary">Assign Category</ion-label>
+      <ion-label >Assign Category</ion-label>
       <ion-select [(ngModel)]="lang2">
         <ion-select-option *ngFor="let item of categories" [value]="item">{{item}}</ion-select-option>
       </ion-select>
