@@ -6,12 +6,13 @@
       <div class="logo"></div>
       <h3 no-margin>
         <ion-text color="light" class="fw700">
-          <ion-text color="secondary">Register</ion-text>
+          <ion-text color="light">Register</ion-text>
         </ion-text>
       </h3>
     </div>
 
     <!-- Register form -->
+
     <form [formGroup]="onRegisterForm" class="list-form">
       <ion-item no-padding class="animated fadeInUp">
         <ion-label position="floating">
@@ -46,11 +47,32 @@
         </ion-label>
         <ion-input color="secondary" type="password" formControlName="password"></ion-input>
       </ion-item>
-      <p ion-text color="warning" class="text08" *ngIf="onRegisterForm.get('password').touched && onRegisterForm.get('password').hasError('required')">
+      
+      <p ion-text color="warning" class="text08" >
+        <ion-text color="warning">
+          Use minimum 8 characters. <br />
+          Use at least 1 uppercase letter. <br />
+          Use at least 1 lowercase letter. <br />
+          Use at least 1 number.
+        </ion-text>
+
+      </p>
+
+
+      <ion-item no-padding class="animated fadeInUp">
+        <ion-label position="floating">
+          <ion-icon name="mail" item-start></ion-icon>
+          Confirm Password
+        </ion-label>
+        <ion-input color="secondary" type="passowrd" formControlName="password"></ion-input>
+      </ion-item>
+      <p ion-text class="text08" *ngIf="onRegisterForm.get('email').touched && onRegisterForm.get('email').hasError('required')">
         <ion-text color="warning">
           This field is required
         </ion-text>
       </p>
+      
+      
     </form>
 
     <div margin-top>

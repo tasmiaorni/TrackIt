@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Platform, NavController } from '@ionic/angular';
-
+import { Bucket} from '../../interfaces/bucket'
 
 @Component({
   selector: 'app-rent-car',
@@ -8,8 +8,23 @@ import { Platform, NavController } from '@ionic/angular';
   styleUrls: ['./rent-car.page.scss'],
 })
 export class RentCarPage implements OnInit {
+  public appBucket: Array<Bucket>;
+  
+  constructor(public navCtrl: NavController
+    ) {
+      this.appBucket = [
+        {
+          title: 'Rent+Car',
+          amount: 1105.00,
+          url: '/rent-car',
+          direct: 'forward',
+          icon: "home",
+          color:"success",
+          budget: 1400.00
 
-  constructor(public navCtrl: NavController) { }
+        },
+      ];
+     }
 
   ngOnInit() {
   }

@@ -36,7 +36,7 @@
 
     <ion-card-header>
       <ion-card-subtitle>Your total expenses for this month:<br></ion-card-subtitle>
-      <ion-card-title>3,027.39$</ion-card-title>
+      <ion-card-title>$3,027.39</ion-card-title>
   </ion-card-header>
   </ion-card>
 
@@ -45,7 +45,7 @@
   <ion-item  [routerLink]="[p.url]"  class="ion-activated">
     <ion-icon [name]="p.icon" slot="start"></ion-icon>
     <ion-label>  {{p.title}}</ion-label>
-    <ion-button fill="solid" [color]="p.color" slot="end" size="default">  {{p.amount}} $</ion-button>
+    <ion-button fill="solid" [color]="p.color" slot="end" size="default">  $ {{p.amount}}</ion-button>
   </ion-item>
 </ion-card>
 <!---

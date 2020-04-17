@@ -68,8 +68,8 @@ export class AppComponent {
         icon: 'alarm'
       },
       {
-        title: 'App Settings',
-        url: '/settings',
+        title: 'Edit Profile',
+        url: '/edit-profile',
         direct: 'forward',
         icon: 'cog'
       }

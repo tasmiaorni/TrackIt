@@ -6,7 +6,7 @@
 
     <ion-title>
       <ion-text color="light"> 
-        <ion-text color="light" class=fw700>Set Accounts</ion-text>
+        <ion-text color="light" class=fw700>Link Bank Account</ion-text>
       </ion-text>
     </ion-title>
 
@@ -27,9 +27,9 @@
       <ion-col size="12" padding>
 
         <ion-list>
-          <ion-item detail="false" color="primary">
-            <ion-icon name="apps-outline" slot="start"></ion-icon>
-            <ion-label>Set a new Account</ion-label>
+          <ion-item  class="ion-text-center" detail="false" color="light">
+            
+            <ion-label class="fw500">Set a new Account</ion-label>
           </ion-item>
 
           <ion-item>
@@ -52,5 +52,5 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-  <ion-button href="../connect-to-bank" size="large" expand="full" color="dark" (click)="sendData()" no-margin>Connect to Bank</ion-button>
+  <ion-button href="../connect-to-bank" size="large" expand="full" color="secondary" (click)="sendData()" no-margin>CONNECT TO BANK</ion-button>
 </ion-content>

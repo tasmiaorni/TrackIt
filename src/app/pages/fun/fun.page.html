@@ -18,11 +18,28 @@
 
 <ion-content>
 
+  <ion-card *ngFor="let p of appBucket" [color]="p.color" >
+    <ion-card-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="ion-align-self-start" >
+            <ion-card-subtitle class="fw700">Budget: $ {{p.budget}}</ion-card-subtitle>
+          </ion-col>
+          
+          <ion-col class="ion-align-self-end">
+            <ion-card-subtitle class="fw700">Expenses: $ {{p.amount}}</ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+  </ion-card>
+
+
   <ion-card>
     <ion-card-header>
       <ion-icon name="cash" slot="start"></ion-icon>
       <ion-card-subtitle>Pending</ion-card-subtitle>
-      <ion-card-title>65.00$</ion-card-title>
+      <ion-card-title>$65.00</ion-card-title>
       <ion-card-subtitle></ion-card-subtitle>
       <ion-card-subtitle>Kayaking Club Miami-Dade</ion-card-subtitle>
       <ion-card-subtitle>4/7/2020</ion-card-subtitle>
@@ -37,7 +54,7 @@
     <ion-card-header>
       <ion-icon name="cash" slot="start"></ion-icon>
       <ion-card-subtitle>Posted</ion-card-subtitle>
-      <ion-card-title>20.00$</ion-card-title>
+      <ion-card-title>$20.00</ion-card-title>
       <ion-card-subtitle></ion-card-subtitle>
       <ion-card-subtitle>Zumba Club Kendall</ion-card-subtitle>
       <ion-card-subtitle>4/4/2020</ion-card-subtitle>
@@ -53,7 +70,7 @@
     <ion-card-header>
       <ion-icon name="cash" slot="start"></ion-icon>
       <ion-card-subtitle>Posted</ion-card-subtitle>
-      <ion-card-title>56.90$</ion-card-title>
+      <ion-card-title>$56.90</ion-card-title>
       <ion-card-subtitle></ion-card-subtitle>
       <ion-card-subtitle>AMC Movie Theaters Inc.</ion-card-subtitle>
       <ion-card-subtitle>4/2/2020</ion-card-subtitle>
@@ -68,7 +85,7 @@
     <ion-card-header>
       <ion-icon name="cash" slot="start"></ion-icon>
       <ion-card-subtitle>Posted</ion-card-subtitle>
-      <ion-card-title>15.00$</ion-card-title>
+      <ion-card-title>$15.00</ion-card-title>
       <ion-card-subtitle></ion-card-subtitle>
       <ion-card-subtitle>AMC Movie Theaters Inc.</ion-card-subtitle>
       <ion-card-subtitle>4/2/2020</ion-card-subtitle>
@@ -83,7 +100,7 @@
     <ion-card-header>
       <ion-icon name="cash" slot="start"></ion-icon>
       <ion-card-subtitle>Posted</ion-card-subtitle>
-      <ion-card-title>70.00$</ion-card-title>
+      <ion-card-title>$70.00</ion-card-title>
       <ion-card-subtitle></ion-card-subtitle>
       <ion-card-subtitle>Universal Orlando Volcano Bay</ion-card-subtitle>
       <ion-card-subtitle>4/1/2020</ion-card-subtitle>

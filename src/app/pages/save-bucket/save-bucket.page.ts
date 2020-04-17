@@ -70,7 +70,7 @@ export class SaveBucketPage implements OnInit {
               const toast = await this.toastCtrl.create({
                 cssClass: 'bg-profile',
                 message: 'New Category Added',
-                duration: 3000,
+                duration: 2000,
                 position: 'bottom'
             });
 

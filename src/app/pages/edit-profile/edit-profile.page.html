@@ -1,9 +1,14 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-menu-button color="secondary"></ion-menu-button>
     </ion-buttons>
     <ion-title>Edit Profile</ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="small" shape="round" color="medium" (click)="goToHome()">
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -61,21 +66,37 @@
           </ion-list>
 
           <ion-list>
-            <ion-radio-group>
-              <ion-list-header color="light">
-                <ion-label class="fw700">User Type</ion-label>
-              </ion-list-header>
+            <ion-list-header color="light">
+              <ion-label class="fw700">Change Password</ion-label>
+            </ion-list-header>
           
-              <ion-item>
-                <ion-label color="primary">Customer</ion-label>
-                <ion-radio slot="start" value="customer" checked></ion-radio>
-              </ion-item>
+            <ion-item>
+              <ion-label color="dark" position="stacked">Enter Old Password:</ion-label>
+              <ion-input inputmode="text" type="password"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="dark" position="stacked">Enter New Password:</ion-label>
+              <ion-input inputmode="text" type="password"></ion-input>
+            </ion-item>
           
-              <ion-item>
-                <ion-label color="primary">Owner</ion-label>
-                <ion-radio slot="start" value="agent"></ion-radio>
-              </ion-item>
-            </ion-radio-group>
+            <ion-item>
+              <p ion-text color="dark" class="text08">
+                <ion-text color="dark">
+                  Use minimum 8 characters. <br />
+                  Use at least 1 uppercase letter. <br />
+                  Use at least 1 lowercase letter. <br />
+                  Use at least 1 number
+                </ion-text>
+
+              </p>
+            </ion-item>
+            
+            <ion-item>
+              <ion-label color="dark" position="stacked">Confirm Password:</ion-label>               
+              <ion-input inputmode="text" type="password"></ion-input>
+            </ion-item>
+
           </ion-list>
 
           <ion-list>
@@ -93,7 +114,7 @@
       </ion-row>
     </ion-grid>
   
-    <ion-button size="large" expand="full" color="dark" (click)="sendData()" no-margin>Save</ion-button>
+    <ion-button size="large" expand="full" color="secondary" (click)="sendData()" no-margin>SAVE</ion-button>
   </ion-card>
   
  <!-- <div padding>

@@ -21,24 +21,24 @@
 
 
 
-<ion-content class="profile">
+<ion-content padding class="profile">
   
     <ion-card>
         <ion-card-header>
             <ion-icon name="cash" slot="start"></ion-icon>
             <ion-card-subtitle>3/30/2020</ion-card-subtitle>
-            <ion-card-title >40 $</ion-card-title>
+            <ion-card-title >$40</ion-card-title>
             <ion-card-subtitle>Pay to landscape</ion-card-subtitle>
-            <ion-card-subtitle>When: 05/05/2020</ion-card-subtitle>
+            <ion-card-subtitle>Reminder Date: 05/05/2020</ion-card-subtitle>
         </ion-card-header>
     </ion-card>
     <ion-card>
        <ion-card-header>
             <ion-icon name="cash" slot="start"></ion-icon>
             <ion-card-subtitle>3/30/2020</ion-card-subtitle>
-            <ion-card-title >200 $</ion-card-title>
+            <ion-card-title >$200</ion-card-title>
             <ion-card-subtitle>Pay for home mortgage</ion-card-subtitle>
-            <ion-card-subtitle>When: 05/20/2020 </ion-card-subtitle>
+            <ion-card-subtitle>Reminder Date: 05/20/2020 </ion-card-subtitle>
        </ion-card-header>
     </ion-card>
   <!--</ion-card>-->
@@ -49,31 +49,32 @@
 
           <ion-list margin-bottom>
            <!-- <ion-list-header color="light">-->
-              <ion-item  detail color="primary">
-                <ion-icon name="apps" slot="start"></ion-icon>
-                <ion-label >Set   New   Reminder</ion-label>
+              <ion-item  class="ion-text-center" detail="false" color="light">
+                <ion-label clas="fw500">
+                Set New Reminder
+                </ion-label>
               </ion-item>
            <!-- </ion-list-header>-->
 
 
             <ion-item>
-              <ion-label color="dark" position="stacked">Purpose:</ion-label>
-              <ion-input inputmode="text" placeholder="Ex..: pay 40$ to the landscape" ></ion-input>
+              <ion-label color="dark" position="stacked">Enter Description:</ion-label>
+              <ion-input inputmode="text" ></ion-input>
             </ion-item>
     
             <ion-item>
               <ion-label color="dark" position="stacked">Amount:</ion-label>
-              <ion-input inputmode="email" placeholder="Ex.: Type your description" ></ion-input>
+              <ion-input inputmode="email" placeholder="$"></ion-input>
             </ion-item>
     
             <ion-item>
               <ion-label color="dark" position="stacked">Date:</ion-label>
-              <ion-input inputmode="text" placeholder="Ex.: mm/dd/yyyy"></ion-input>
+              <ion-datetime displayFormat="MMMM DD YY" placeholder="Select Date" min="2020" max="2021"></ion-datetime>
             </ion-item>
 
             <ion-item>
-              <ion-label color="dark" position="stacked">Category:</ion-label>
-              <ion-input inputmode="text" placeholder="Ex..: other" ></ion-input>
+              <ion-label color="dark" position="stacked">Category: (optional)</ion-label>
+              <ion-input inputmode="text" ></ion-input>
             </ion-item>
 
           </ion-list>
@@ -82,7 +83,7 @@
       </ion-row>
     </ion-grid>
   
-    <ion-button size="large" expand="full" color="dark" (click)="sendData()" no-margin>Save</ion-button>
+    <ion-button size="large" expand="full" color="secondary" (click)="sendData()" no-margin>Save</ion-button>
   <!--</ion-card>-->
   
   <div padding>

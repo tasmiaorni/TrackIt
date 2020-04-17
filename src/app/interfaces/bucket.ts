@@ -5,4 +5,5 @@ export interface Bucket {
     direct?: string;
     icon?: string;
     color:string;
+    budget: number;
 }

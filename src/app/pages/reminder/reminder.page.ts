@@ -23,10 +23,10 @@ export class ReminderPage implements OnInit {
     loader.present();
     loader.onWillDismiss().then(async l => {
       const toast = await this.toastCtrl.create({
-        showCloseButton: true,
+        showCloseButton: false,
         cssClass: 'bg-profile',
-        message: 'Your Data was Edited!',
-        duration: 3000,
+        message: 'Your Reminder Was Saved',
+        duration: 2000,
         position: 'bottom'
       });
 
